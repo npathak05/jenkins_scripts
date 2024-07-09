@@ -1,0 +1,15 @@
+pipeline{
+    agent any{
+        stages{
+            options{
+                counter
+            }
+            stage('test'){
+                steps{
+                    echo 'test'
+                }
+            }
+        }
+    }
+
+}
